@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IN-SPIRE - CNAHS Research Journal - Research Papers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: #F4E1C6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background: #800000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #A52A2A;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: white;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .section-container {
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        .paper-list {
+            list-style: none;
+            padding: 0;
+        }
+        .paper-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .paper-item:hover {
+            background: #f7e1c4;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .paper-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #800000;
+            margin-bottom: 5px;
+        }
+        .paper-authors {
+            font-size: 14px;
+            color: #555;
+        }
+        .paper-abstract {
+            display: none;
+            padding-top: 10px;
+            font-size: 14px;
+            color: #333;
+            text-align: justify;
+        }
+        .view-pdf {
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IN-SPIRE</h1>
+        <p>CNAHS Research Journal</p>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="research.html">Research Papers</a>
+        <a href="mission.html">Mission & Objectives</a>
+        <a href="submission.html">Submission Guidelines</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <section id="research" class="section-container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="mb-0">Research Papers</h2>
+                <input type="text" id="searchBar" class="form-control" style="max-width: 300px;" placeholder="Search..." onkeyup="searchPapers()">
+            </div>
+            <ul class="paper-list">
+                <!-- Research Paper 1 -->
+                <li class="paper-item" onclick="toggleAbstract('abstract1')">
+                    <div class="paper-title">A Surgical Approach of Mentorship: Staff Nurses' Lived Experiences with Nursing Students in a Public Hospital Setting</div>
+                    <div class="paper-authors"><strong>Author(s):</strong> Analyn A. Hole and Yamato V. Sano</div>
+                    <div id="abstract1" class="paper-abstract">
+                        <strong>Abstract:</strong> This qualitative study aimed to explore and gain in-depth understanding of the experiences of nurses in dealing with student nurses using Husserl’s phenomenological approach and Collaizi’s method of qualitative data analysis. Purposive sampling was used to select six nurses from a public hospital in Cebu. A series of semi-structured interviews were done for data gathering until data saturation was reached. Their experience relates to the phases of perioperative nursing which yielded three essential themes: Pre-Op: Self Preparation, Intra-Op;Teaching and Learning, and Post-Op: Nursing Hope. The first essential theme, Pre-Op: Self Preparation, refers to the preparation done by these nurses to themselves before interacting with student nurses. This preparation includes mental conditioning, knowledge review and skills reassessment. Intra-Op: Teaching and Learning, the second essential theme, highlights the nursing view dealing with student nurses as a chance for them to teach and mentor, just like the actual operation that adjusts, to help them develop into the greatest nurses they can be. The last theme, Post-Op: Nursing Hope, relates to the hopes of the nurses towards student nurses. In addition to providing excellent patient care, nurses aspire to develop and mentor student nurses, passing down the knowledge and empathy necessary for success in their future positions.This hope includes for them to learn from their mistakes and to become the best version of themselves. The findings reveal that nurses who interacted with student nurses relate their experience as a perioperative process in a surgical approach. Preparing themselves, implementing what they prepared for, and hoping for the best after the encounter.
+                        <br><br>
+                        <a href="pdfs/paper_1.pdf" class="btn btn-danger view-pdf" onclick="openPDF(event, 'pdfs/paper_1.pdf')">View PDF</a>
+                    </div>
+                </li>
+
+                <!-- Research Paper 2 -->
+                <li class="paper-item" onclick="toggleAbstract('abstract2')">
+                    <div class="paper-title">Pride And Prejudice: The Lived Experience of TransWoman Nursing Students
+                    </div>
+                    <div class="paper-authors"><strong>Author(s):</strong> Rada Joanne A. Alvarado, Marnell Beaflor R. Apuda, Marian Bia C. Blanco, Charlene T. Cabatuan,  Sheen P. Congson and Erica Cris F. Naul</div>
+                    <div id="abstract2" class="paper-abstract">
+                        <strong>Abstract:</strong> This study explores transgender visibility in nursing education and its potential to represent sexual minorities in higher education while shaping sensitive policies for trans students. Despite increased visibility due to progressive ideals, transgender and gender nonconforming (TGNC) individuals still face societal challenges within various systems, even with growing allyship. Conducted in select non-sectarian nursing schools in Cebu City, the study employed a descriptive phenomenological design with specific inclusion criteria for participant identification. Key informant interviews were conducted, and raw audio data were transcribed, analyzed using Colaizzi’s thematic analysis technique and NVivo 10. The findings revealed the real-life experiences of trans-woman nursing students (TNS), leading to five salient themes: “Raising My Flag,” “Ohana Means Family,” “Navigating Campus Climates,” “Ally or Adversary,” and “The Care I Provide.” These experiences underscore their resilience amidst structural obstacles, emphasizing the need for greater diversity in educational institutions, clinical settings, and society. Both positive and negative encounters highlight the necessity of a more accepting culture that affirms the identities of TNS, enabling them to thrive personally and professionally through validation and respect.
+                        <br><br>
+                        <a href="pdfs/paper_2.pdf" class="btn btn-danger view-pdf" onclick="openPDF(event, 'pdfs/paper_2.pdf')">View PDF</a>
+                    </div>
+                </li>
+
+                <!-- Research Paper 3 -->
+                <li class="paper-item" onclick="toggleAbstract('abstract3')">
+                    <div class="paper-title">Healthcare Worker Burnout And Patient Outcomes: A Meta-Analysis</div>
+                    <div class="paper-authors"><strong>Author(s):</strong> Yenna Marie A. Alpuerto and Wilbert G. Panerio</div>
+                    <div id="abstract3" class="paper-abstract">
+                        <strong>Abstract:</strong> The COVID-19 pandemic has intensified burnout among healthcare workers, adversely affecting patient health and safety outcomes. This meta-analysis quantifies the effect size and examines the relationship between healthcare worker burnout and patient outcomes through a comprehensive review of studies from PubMed, Scopus, and Google Scholar, following PRISMA guidelines. The Hunter and Schmidt method was used to calculate weighted effect sizes, interpreted using Cohen’s model. After a rigorous selection process, seven studies were chosen from an initial pool of 265, each presenting diverse correlating variables and coefficients. The analysis found a weighted effect size of r = 0.3508, indicating a moderate positive correlation, particularly between emotional exhaustion, depersonalization, and adverse patient outcomes. Despite the limited number of studies meeting the inclusion criteria, the findings emphasize the harmful effects of burnout on patient care, stressing the urgent need for interventions to improve healthcare delivery and patient outcomes.
+                        <br><br>
+                        <a href="pdfs/paper_3.pdf" class="btn btn-danger view-pdf" onclick="openPDF(event, 'pdfs/paper_3.pdf')">View PDF</a>
+                    </div>
+                </li>
+
+                <!-- Research Paper 4 -->
+                <li class="paper-item" onclick="toggleAbstract('abstract4')">
+                    <div class="paper-title">The Medical Mission Program of Nursing Community Extension Services of Cit-University: A CIPP Evaluation</div>
+                    <div class="paper-authors"><strong>Author(s):</strong> Hannah Kaye R. Tumabiene, Poly Yanna H. Sanchez, Precious Canete, and Ann P. Unabia</div>
+                    <div id="abstract4" class="paper-abstract">
+                        <strong>Abstract:</strong> This research evaluates the efficiency of the "Kapwa Ko, Mahal Ko" medical mission program in supporting the Nursing Community Extension Services (NCES) by identifying its strengths and weaknesses. Titled "The Medical Mission Program of Nursing Community Extension Services of CIT-University: A CIPP Evaluation," the study examines the collaboration between CIT University and Barangay Labangon as part of the university’s commitment to community service. Using Stufflebeam’s CIPP Evaluation Model, data was collected through heterogeneous purposive sampling, including interviews with NCES officers and coordinators, analysis of existing documentation, and surveys of medical mission recipients. Findings show the program relies on resources from sponsors, partners, volunteers, and medical supply donations, operating on the first and third Saturdays of each month under NCES and Barangay Labangon’s supervision. Free consultations are the most in-demand service, with cough-related illnesses being the most common health concern. The program also enhances recipients' medical knowledge and alleviates financial burdens. Overall, "Kapwa Ko, Mahal Ko" has significantly improved community health by providing accessible medical care, removing financial barriers, and enhancing participants' well-being and quality of life, effectively fulfilling its objectives.
+                        <br><br>
+                        <a href="pdfs/paper_4.pdf" class="btn btn-danger view-pdf" onclick="openPDF(event, 'pdfs/paper_4.pdf')">View PDF</a>
+                    </div>
+                </li>
+
+                <!-- Research Paper 5 -->
+                <li class="paper-item" onclick="toggleAbstract('abstract5')">
+                    <div class="paper-title">Primipara: Advanced Maternal-Age Mother Dealing
+                        with A Child with Congenital Anomalies</div>
+                    <div class="paper-authors"><strong>Author(s):</strong> Michelle S. Batiancila, Princes Precel Delarmente, Erica Mae Y. Erasan, Mellanie Marie T. Gopio, Kim Delos Santos, and Mitch Champaine Sasil
+                        </div>
+                    <div id="abstract5" class="paper-abstract">
+                        <strong>Abstract:</strong> The increasing number of pregnancies among women over 35 reflects a global trend of delayed motherhood, with advanced maternal age posing higher risks of pregnancy complications, including congenital defects that affect both the child and parents. While medical research on congenital defects is extensive, little is known about the lived experiences of older first-time mothers. This phenomenological study explored how these mothers cope with raising a child with a birth defect through unstructured interviews with five primiparous women of advanced maternal age. Using Van Manen's lifeworld existential framework, the analysis examined emotional and behavioral responses (lived body), the journey from diagnosis to advocacy (lived time), daily challenges (lived space), and the role of support networks (human relations). Despite significant difficulties, findings revealed that the mother-child relationship was characterized by deep love, resilience, and personal growth. Ultimately, the study highlights how adversity can strengthen family bonds and underscores the need for supportive environments to help these mothers navigate their complex realities.
+                        <br><br>
+                        <a href="pdfs/paper_5.pdf" class="btn btn-danger view-pdf" onclick="openPDF(event, 'pdfs/paper_5.pdf')">View PDF</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CNAHS Research Journal | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function toggleAbstract(id) {
+            var abstract = document.getElementById(id);
+            if (abstract.style.display === "none" || abstract.style.display === "") {
+                abstract.style.display = "block";
+            } else {
+                abstract.style.display = "none";
+            }
+        }
+        function openPDF(event, pdfUrl) {
+            event.preventDefault(); 
+
+            var pdfViewer = document.getElementById('pdfViewer');
+            pdfViewer.src = pdfUrl; 
+
+            var modal = new bootstrap.Modal(document.getElementById('pdfModal')); 
+            modal.show(); 
+        }
+        function searchPapers() {
+            var input, filter, papers, title, authors, abstract, i, txtValue;
+            input = document.getElementById("searchBar");
+            filter = input.value.toLowerCase();
+            papers = document.getElementsByClassName("paper-item");
+
+            for (i = 0; i < papers.length; i++) {
+                title = papers[i].getElementsByClassName("paper-title")[0];
+                authors = papers[i].getElementsByClassName("paper-authors")[0];
+                abstract = papers[i].getElementsByClassName("paper-abstract")[0];
+
+                txtValue = title.textContent + " " + authors.textContent + " " + (abstract ? abstract.textContent : "");
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    papers[i].style.display = "";
+                } else {
+                    papers[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    <!-- PDF Modal -->
+    <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pdfModalLabel">Research Paper</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="pdfViewer" style="width:100%; height:600px; border:none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

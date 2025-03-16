@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IN-SPIRE - CNAHS Research Journal - Editorial Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Georgia', serif; 
+            background: linear-gradient(to bottom, #F4E1C6, #FFE5B4); 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer { 
+            background: #800000; 
+            color: white; 
+            padding: 20px; 
+            text-align: center; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav { 
+            background: #A52A2A; 
+            padding: 15px; 
+            text-align: center; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a { 
+            color: #FFD700; 
+            text-decoration: none; 
+            margin: 0 15px; 
+            font-size: 18px; 
+            font-weight: bold; 
+            transition: color 0.3s ease-in-out; 
+        }
+        nav a:hover { 
+            color: white; 
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+        }
+        .content { flex: 1; padding: 20px; }
+        .section-container { 
+            padding: 40px; 
+            background: white; 
+            margin: 20px auto; 
+            border-radius: 15px; 
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); 
+            max-width: 900px; 
+            text-align: center;
+        }
+        h2, h3 { color: #800000; font-weight: bold; }
+        h2 { border-bottom: 3px solid #A52A2A; display: inline-block; padding-bottom: 5px; }
+        .card {
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            margin: 0 auto;
+        }
+        .card:hover { transform: scale(1.05); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+        .card img { height: 150px; object-fit: cover; }
+        .modal-body { text-align: justify; }
+        footer { margin-top: auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IN-SPIRE</h1>
+        <p>CNAHS Research Journal</p>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="research.html">Research Papers</a>
+        <a href="mission.html">Mission & Objectives</a>
+        <a href="submission.html">Submission Guidelines</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <section id="editorial" class="section-container">
+            <h3>CITU - Journal of Health Research</h3>
+            <p><strong>Volume 1 - 2025</strong></p>
+            <h2 class="text-center my-4">Editorial Board</h2>
+            
+            <div class="editor-group">
+                <Strong>Editor in Chief</Strong>
+                <div class="d-flex justify-content-center">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#editor1">
+                        <img src="images/Lloyd.jpg" class="card-img-top" alt="Dr. Lloyd Matthew C. Derasin">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dr. Lloyd Matthew C. Derasin</h5>
+                            <p class="card-text">Cebu Institute of Technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="editor-group mt-4">
+                <Strong>Managing Editor</Strong>
+                <div class="d-flex justify-content-center">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#editor2">
+                        <img src="images/default.jpg" class="card-img-top" alt="Mr. Jason Lim">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mr. Jason Lim</h5>
+                            <p class="card-text">Cebu Institute of Technology - University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="editor-group mt-4">
+                <strong>Associate Editors</strong>
+                <div class="d-flex justify-content-center gap-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#editor3">
+                        <img src="images/vincent.png" class="card-img-top" alt="Mr. Lloyd Vincent C. Derasin">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mr. Lloyd Vincent C. Derasin</h5>
+                            <p class="card-text">Cebu Normal University</p>
+                        </div>
+                    </div>
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#editor4">
+                        <img src="images/marvin.png" class="card-img-top" alt="Prof. Marvin S. Canque">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Prof. Marvin S. Canque</h5>
+                            <p class="card-text">Cebu Technological University</p>
+                        </div>
+                    </div>
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#editor5">
+                        <img src="images/grace.jpg" class="card-img-top" alt="Dr. Grace C. Arcamo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dr. Grace C. Arcamo</h5>
+                            <p class="card-text">Cebu Institute of Technology University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="editor-group mt-4">
+                <div class="d-flex justify-content-center gap-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#editor6">
+                        <img src="images/lovelyn.png" class="card-img-top" alt="Dr. Lovelyn G. Tipon">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dr. Lovelyn G. Tipon</h5>
+                            <p class="card-text">Assistant Professor 4, Cebu Normal University</p>
+                        </div>
+                    </div>
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#editor7">
+                        <img src="images/jose.png" class="card-img-top" alt="Dr. Jose Mari Louis G. Alforque">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dr. Jose Mari Louis G. Alforque</h5>
+                            <p class="card-text">Professor 2, Cebu Normal University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="editor-group mt-4">
+                <strong>Reviewers</strong>
+                <div class="d-flex justify-content-center gap-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#editor8">
+                        <img src="images/reynaldo.png" class="card-img-top" alt="Dr. Reynaldo V. Moral">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dr. Reynaldo V. Moral</h5>
+                            <p class="card-text">Assistant Professor 1 – Cebu Normal University</p>
+                        </div>
+                    </div>
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#editor9">
+                        <img src="images/carmel.jpg" class="card-img-top" alt="Dr. Carmel Vip C. Derasine">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dr. Carmel Vip C. Derasin</h5>
+                            <p class="card-text">Professor 4, Cebu Normal University</p>
+                        </div>
+                    </div>
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#editor10">
+                        <img src="images/rhona.png" class="card-img-top" alt="Dr. Rhona Marie Caingles-Noquiao">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dr. Rhona Marie Caingles-Noquiao</h5>
+                            <p class="card-text">Instructor, Cebu Normal University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 CNAHS Research Journal | All Rights Reserved</p>
+    </footer>
+
+    <!-- Modal for Editor 1 -->
+    <div class="modal fade" id="editor1" tabindex="-1" aria-labelledby="editor1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editor1Label">Dr. Lloyd Matthew C. Derasin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Dr. Lloyd Matthew C. Derasin is a distinguished nurse educator, researcher, and academic leader. He serves as a Research Lecturer, Research Coordinator, and Ethics Chairman at Cebu Institute of Technology - University, as well as a Graduate School Lecturer at Cebu Normal University. Holding a Ph.D. in Education with a specialization in Research and Evaluation from Cebu Normal University, Dr. Derasin has published extensively in international peer-reviewed journals, covering healthcare, education, and social sciences. Additionally, he is an active peer reviewer for multiple academic journals.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Editor 2 -->
+    <div class="modal fade" id="editor2" tabindex="-1" aria-labelledby="editor2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editor2Label">Mr. Jason Lim</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Mr. Jason Lim is the Managing Editor of the CNAHS Research Journal. He is affiliated with Cebu Institute of Technology - University and has extensive experience in academic publishing and research coordination. His expertise spans editorial management, peer review processes, and journal indexing.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Editor 3 -->
+    <div class="modal fade" id="editor3" tabindex="-1" aria-labelledby="editor3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editor3Label">Mr. Lloyd Vincent C. Derasin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Lloyd Vincent C. Derasin, RN, MN, is an accomplished nursing professional and academic. He serves as an Assistant Professor 4 at Cebu Normal University, where he is the Focal Person for the CNAHS Disaster Risk Reduction and Public Service Continuity Unit. Beyond academia, he is a Board of Trustee and Training Officer for the Base Camp Emergency Response Team, Incorporated.
+                    Mr. Derasin is also a dedicated advocate for emergency response and trauma care. He is a Stop the Bleed Ambassador and a licensed Stop the Bleed Training Provider/Instructor, actively equipping communities with lifesaving skills. Additionally, he is a proud member of The Committee for Tactical Emergency Casualty Care, contributing to advancements in tactical and emergency medical practices.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Editor 4 -->
+    <div class="modal fade" id="editor4" tabindex="-1" aria-labelledby="editor4Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editor4Label">Prof. Marvin S. Canque</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Marvin Siarot Canque, Ma. Ed. is an accomplished educator and researcher from San Fernando, Cebu. He is an Associate Professor IV at Cebu Technological University–San Fernando Campus and a Ph.D. candidate in Education majoring in Research and Evaluation at Cebu Normal University. With a strong academic foundation, including a Master of Arts in Education major in Mathematics Education and a Bachelor of Secondary Education major in Mathematics, both from Cebu Normal University, he has dedicated his career to advancing education through innovative teaching strategies, policy analysis, and phenomenological inquiry. His extensive research portfolio includes published works on education, health, and technology, such as studies on virtual learning, technological skills development, and the lived experiences of diverse Filipino communities. He has presented at various international conferences and serves as a peer reviewer for Scopus-indexed journals. A leader in his institution, he has held key roles such as Director of the Extension Office and Chairperson of the BTLED Program. Recognized with the CTU Outstanding Research and Development Award in Scientific Publication, Marvin is an active member of multiple professional organizations, contributing significantly to the fields of education and research.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Editor 5 -->
+    <div class="modal fade" id="editor5" tabindex="-1" aria-labelledby="editor5Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editor5Label">Dr. Grace C. Arcamo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Dr. Grace C. Arcamo, RN, MAN, Ph.D., TM, Dev Ed.D., is a distinguished nurse leader and dissertation candidate for a Doctor of Science in Nursing, specializing in Gerontology. She has extensive experience in nursing education and research, serving as a research panelist for BSN Level 3 and 4 oral defenses at the University of San Jose-Recoletos from 2011 to 2016 and for BSN 3 students at Cebu Institute of Technology-University. Dr. Arcamo is an accomplished international research presenter, having shared her work at prestigious conferences such as the 4th Taiwan-Philippines Academic Communication Conference in 2011, the International Conference on Interdisciplinary Research Innovation in 2012, and the 5th International Conference on Psychology, Counseling, and Education in 2023. Notable among her presentations is her recent virtual paper on "COVID-19 Vaccine Hesitancy in Selected Middle- and Old-Aged Individuals in Cebu," presented in Paris, France.
+                    Dr. Arcamo has published significant works, including "Air Pollution Attributable Deaths: Global View Through Fractal Analysis" and "COVID-19 Vaccine Hesitancy in Selected Middle- and Old-Aged Individuals in Cebu: A Comparative Study." She has received multiple accolades for her research contributions, such as first place for her study on cardiac standstill among ER nurses (2013) and top awards in international and regional conferences, including the 2nd International Conference of Nursing Students (2012) and the CVHRD Health Research Poster Exhibit (2013). Dr. Arcamo's dedication to interdisciplinary research and nursing education underscores her commitment to advancing healthcare and academic excellence.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Editor 6 -->
+    <div class="modal fade" id="editor6" tabindex="-1" aria-labelledby="editor6Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editor6Label">Dr. Lovelyn G. Tipon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Dr. Lovelyn G. Tipon is an Assistant Professor IV at Cebu Normal University’s College of Nursing and the current Director of the Research Institute for Ageing and Health. She holds a Doctor of Science in Nursing major in Gerontology from Cebu Normal University and is pursuing a Doctor of Education in Educational Leadership. She also completed her Master of Arts in Nursing from Father Saturnino Urios University.
+                    With extensive experience in academia, Dr. Tipon has taught in both undergraduate and graduate nursing programs and has been actively involved in nursing research. Her studies focus on gerontology, healthcare policies, and public health concerns. She has co-authored multiple research publications in SCOPUS-indexed journals, including works on older adults' experiences in academia and artificial intelligence applications in tuberculosis mortality analysis.
+                    Dr. Tipon has presented her research at international conferences, including the International Conference of Nurses (ICONs) and various methodological research forums. She has also served as a research panelist and evaluator, contributing to the academic and professional development of nursing students and researchers.
+                    As a leader in aging and healthcare research, Dr. Tipon continues to explore innovative solutions for improving healthcare delivery and policy implementation for older adults in the Philippines.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Editor 7 -->
+    <div class="modal fade" id="editor7" tabindex="-1" aria-labelledby="editor7Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editor7Label">Dr. Jose Mari Louis G. Alforque</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Dr. Jose Mari Louis G. Alforque is a distinguished professor at Cebu Normal University’s College of Nursing, where he has been an educator and clinical instructor since 2006. He holds a Doctor of Philosophy in Nursing from Silliman University and a Doctor of Science in Nursing major in Gerontological Nursing from Cebu Normal University. His academic background also includes a Master in Nursing major in Maternal and Child Nursing from Cebu Normal University.
+                    A prolific researcher, Dr. Alforque has developed nursing theories, including the Theory of Creative Aging and the Emergent Theory of Encountering Nursing in a Nurse-Nursed Dyadic Relationship (ThENNDyR). His research has been published in SCOPUS and Clarivate-indexed journals, contributing significantly to gerontology and nursing education. He has presented in numerous international and national conferences and has received recognition for his pioneering work in nursing research.
+                    Dr. Alforque is an active member of the Philippine Nurses Association, the Maternal and Child Nurses Association of the Philippines, the Gerontology Nurses Association of the Philippines, and the Philippine National Research Society. His expertise in qualitative research and grounded theory has made him a sought-after speaker and panelist in nursing and health science research.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Editor 8 -->
+    <div class="modal fade" id="editor8" tabindex="-1" aria-labelledby="editor8Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editor8Label">Dr. Reynaldo V. Moral</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Reynaldo V. Moral, PhD, Finished his Bachelor of Secondary Education major in Social Science at Cebu Normal University (CNU). He earned his Master of Arts in Education (MAED) in Social Studies and a Doctor of Philosophy in Education (Ph.D.) major in Research and Evaluation at the same university. He has been a Master Teacher I of the Department of Education, Division of Cebu City, a module writer in Practical Research 2 and Teacher’s Learning Guide. He is just currently an Assistant Professor I and research external and internal panelist and advisers of thesis and dissertation at CNU, and a resident panelist at the University of San Carlos of Senior High School- South Campus. He co-authored educational research books published by Book of Life Publication, GRIN Publishing, and A2Z Edu Learning Hub LLP. He was a grantee of the Basic Education Research Fund (BERF) 2020. A multi-awardee in the field of educational research. He has published in various refereed peer-reviewed journals. He has been invited several times as a resource speaker during In-Service Training, Learning Action Cell sessions, and National Training on Pedagogical Approaches for the New Normal organized by Magister Servus.  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Editor 9 -->
+    <div class="modal fade" id="editor9" tabindex="-1" aria-labelledby="editor9Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editor9Label">Dr. Carmel Vip C. Derasin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Dr. Carmel Vip Conejos Derasin is a Professor IV at Cebu Normal University’s Department of Languages and Literature. With a strong academic foundation, he holds a Doctor of Education major in English Language Teaching and is a candidate for a Doctor of Arts in Literature and Communication at Cebu Normal University. He also completed a Master of Education major in Administration and Supervision at Cebu Technological University and graduated cum laude with a Bachelor of Arts in English from Cebu Normal University.
+                    A seasoned educator, Dr. Derasin has been teaching English, linguistics, and literature courses at the undergraduate and graduate levels since 1997. His expertise includes literary criticism, discourse analysis, sociolinguistics, and innovative strategies in language teaching. He is also a certified reviewer for English and Literature subjects for the Licensure Examination for Teachers (LET).
+                    Dr. Derasin is a prolific researcher with numerous publications in SCOPUS and internationally indexed journals, covering topics such as rhetorical structures in media, syntactic Filipinisms, and linguistic landscapes. His work has contributed significantly to English language learning, literature, and pedagogy in the Philippines.
+                    An active member of multiple academic organizations, including the Linguistics Society of the Philippines, the Philippine Association for Teacher Education, and the Coalition for Better Education, he has also served as a speaker, research adviser, and module developer for language education.
+                    With his extensive contributions to research and education, Dr. Derasin continues to be a driving force in advancing language and literature studies in the Philippines.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Editor 10 -->
+    <div class="modal fade" id="editor10" tabindex="-1" aria-labelledby="editor10Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editor10Label">Dr. Rhona Marie Caingles-Noquiao</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Dr. Rhona Marie Caingles-Noquiao is a distinguished nurse educator and researcher specializing in gerontological nursing. She holds a Doctor of Science in Nursing major in Gerontological Nursing from Cebu Normal University and a Master of Arts in Nursing major in Medical-Surgical Nursing from Holy Name University, where she graduated Magna Cum Laude. She also earned a Bachelor of Science in Nursing from the same institution.
+                    With extensive experience in both clinical and academic settings, Dr. Noquiao has served as an instructor at Cebu Normal University and a senior clinical instructor at Mater Dei College. She previously worked as a staff nurse at Chong Hua Hospital and Our Lady of Lourdes Hospital.
+                    An active member of various professional organizations, including the Philippine Nurses Association, the Gerontology Nurses Association in the Philippines, and the Honor Society of Nursing Sigma Theta Tau International, she is committed to advancing nursing education and research.
+                    Dr. Noquiao has presented her research at international conferences in Japan, Taiwan, and the Philippines, and her work on life satisfaction among Filipino older adults has been published in a Scopus-indexed journal. She continues to engage in research, mentorship, and curriculum development to enhance the quality of nursing education and practice.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
